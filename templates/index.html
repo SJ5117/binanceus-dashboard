@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='UpdateBinanceUSData.js') }}"></script>
+    <title>BinanceUS Dashboard</title>
+</head>
+<body>
+    <h1>BinanceUS Dashboard</h1><br>
+    <div id="app">
+        <p>{{ data.example_data }}</p>
+    </div>
+
+    <script>
+        // Assume data is a dictionary containing information about cryptocurrencies
+        var data = {{ data | tojson | safe }};
+
+        console.log("This is it: ", data);
+        
+        // Call the function from the external script
+        updateBinanceUSData(data);
+    </script>
+</body>
+</html>
