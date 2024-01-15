@@ -3,7 +3,7 @@
 There are a few things you need to do to set up your environment to run this. It can be run from the terminal or on a web browser (preferred).
 
 ## Step 1: Download this repo
-- Download this repository as a zip, extract it, and place it in a folder with the name of your choice (we'll call this repoDir).
+- Download this repository as a zip, extract it, and place it in a folder with the name of your choice (we'll call this myRepoDir for the sake of this tutorial).
 
 ## Step 2: Downloading Python, npm, and Installing pip
 1. Download and install Python 3:
@@ -16,6 +16,7 @@ Run the installer and follow the prompts.
 Windows:
 Download the latest Python 3 installer from https://www.python.org/downloads/windows/
 Run the installer, choose "Add Python 3.x to PATH", and complete the installation.
+
 2. Install npm:
 
 Mac:
@@ -23,9 +24,11 @@ Check if npm is already installed: npm -v
 If not, install Node.js (which includes npm): https://nodejs.org/en/download/
 Windows:
 Download and install Node.js from https://nodejs.org/en/download/
+
 3. Install pip:
 
 Python 3.4 and later: pip is usually included. Check with pip -V.
+
 If pip is not installed:
 Download get-pip.py from https://bootstrap.pypa.io/get-pip.py
 Run python3 get-pip.py
@@ -34,11 +37,11 @@ Run python3 get-pip.py
 - Install Flask through pip ```pip install Flask``` use ```pip3 install Flask``` if that doesn't work
 
 ## Step 4: Make changes to the source code to get your API information
-- Change these lines in BinanceUSCostBasis.py (lines 13, 14, and 17) to match your public and private API keys, as well as set your starting date.
+- Change these lines in myRepoDir/binanceus/BinanceUSCostBasis.py (lines 13, 14, and 17) to match your public and private API keys, as well as set your starting date.
 
 ## Step 5: Start the Flask server
-- Start the Flask server by running this command while you are in (repoDir) ```python3 CryptoCostBasisApp.py```
-- You may need to install all of the imports in BinanceUSCostBasis.py before running; errors should tell you this.
+- Start the Flask server by running this command while you are in (myRepoDir) ```python3 CryptoCostBasisApp.py```
+- You may need to install all of the imports in myRepoDir/binanceus/BinanceUSCostBasis.py before running; errors should tell you this.
 - This will run your code in the terminal twice (yes, this can be run from the terminal), and it will start your server on your localhost (127.0.0.1) on port 5000.
 
 ## Step 6: Go to your browser to view the dashboard
